@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="calc.css"/>
+</head>
+<div id="head"> </div>
+    <div id="text">
+    <h3> Calculator</h3>
+    </div>
+<body class="grad">
+
+    <form name="form1">
+        <input id="lcdu" name="lcdsu" type="text" value="" />
+        <input id="lcd" name="lcds" type="text" value="0"/>
+        <input class="textview" name="textview"/>
+        </form>
+            <table class="t1">
+            <tr>
+                <td colspan="5 "><input class="display-screen" type="text"  id="res" disabled /></td>
+            </tr>
+        
+            <tr>
+                <!-- display() function display value of clicked button-->
+                <td><input type="bt1" value="(" onclick="display('(')" /></td>
+                <td><input type="bt1" value=")" onclick="display(')')" /></td>
+                <td><input type="bt1" value="ans" onclick="display('ans')" /></td>
+                <td><input type="bt1" value="del" onclick="display('del')" /></td>
+				<td><input type="bt1" value="clear" onclick="clearscreen('0')" /></td>
+				
+            </tr>
+            <tr>
+                <!-- display() function display value of clicked button-->
+                <td><input type="btn" value="7" onclick="display('7')" /></td>
+                <td><input type="btn" value="8" onclick="display('8')" /></td>
+                <td><input type="btn" value="9" onclick="display('9')" /></td>
+                <td><input type="button" value="%" onclick="display('%')" /></td>
+                <td><input type="button" value="&#8730;" onclick="display('&#8730;')" /></td>
+            </tr>
+            <tr>
+                <!-- display() function display value of clicked button-->
+                <td><input type="btn" value="4" onclick="display('4')" /></td>
+                <td><input type="btn" value="5" onclick="display('5')" /></td>
+                <td><input type="btn" value="6" onclick="display('6')" /></td>
+                <td><input type="button" value="&#xd7;" onclick="display('*')" /></td>
+                <td><input type="button" value="&#xf7;" onclick="display('/')" /></td>
+            </tr>
+            <tr>
+                <!-- display() function display value of clicked button-->
+                <td><input type="btn" value="1" onclick="display('1')" /></td>
+                <td><input type="btn" value="2" onclick="display('2')" /></td>
+                <td><input type="btn" value="3" onclick="display('3')" /></td>
+                <td><input type="button" value="+" onclick="display('+')" /></td>
+                <td><input type="button" value="-" onclick="display('-')" /></td>
+            </tr>
+            <tr>
+                <!-- display() function display value of clicked button-->
+                <td><input type="button" value="." onclick="display('.')" /></td>
+                <td><input type="btn" value="0" onclick="display('0')" /></td>
+                <td><input type="button" value="&#xb1;" onclick="display('&#xb1;')" /></td>
+               <td style="height: 40px;" class="bn1" colspan="2  "><input type="button" value="Enter" onclick="calculate('Enter')" /></td>
+            </tr>
+    </table>
+    <script src="calc.js"> </script>
+</body>
+
+</html>
